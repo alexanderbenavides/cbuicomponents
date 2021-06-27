@@ -1,0 +1,180 @@
+// Azul
+$blue-50: #f3f8ff;
+$blue-100: #c5dcff;
+$blue-200: #97c1fe;
+$blue-300: #69a5fe;
+$blue-400: #3b8afd;
+$blue-500: #0d6efd;
+$blue-600: #0b5ed7;
+$blue-700: #094db1;
+$blue-800: #073d8b;
+$blue-900: #052c65;
+
+// Verde
+$green-50: #f4f9f6;
+$green-100: #c8e2d6;
+$green-200: #9ccbb5;
+$green-300: #70b595;
+$green-400: #459e74;
+$green-500: #198754;
+$green-600: #157347;
+$green-700: #125f3b;
+$green-800: #0e4a2e;
+$green-900: #0a3622;
+
+// Amarillo
+$yellow-50: #fffcf3;
+$yellow-100: #fff0c3;
+$yellow-200: #ffe494;
+$yellow-300: #ffd965;
+$yellow-400: #ffcd36;
+$yellow-500: #ffc107;
+$yellow-600: #d9a406;
+$yellow-700: #b38705;
+$yellow-800: #8c6a04;
+$yellow-900: #664d03;
+
+// Cian
+$cyan-50: #f3fcfe;
+$cyan-100: #c5f2fb;
+$cyan-200: #97e8f9;
+$cyan-300: #69def6;
+$cyan-400: #3bd4f3;
+$cyan-500: #0dcaf0;
+$cyan-600: #0baccc;
+$cyan-700: #098da8;
+$cyan-800: #076f84;
+$cyan-900: #055160;
+
+// Rosado
+$pink-50: #fdf5f9;
+$pink-100: #f5cee1;
+$pink-200: #eda7ca;
+$pink-300: #e681b3;
+$pink-400: #de5a9b;
+$pink-500: #d63384;
+$pink-600: #b62b70;
+$pink-700: #96245c;
+$pink-800: #761c49;
+$pink-900: #561435;
+
+// rojo
+$red-50: #f5ebeb;
+$red-100: #f8d7da;
+$red-200: #f1aeb5;
+$red-300: #ea868f;
+$red-400: #e35d6a;
+$red-500: #dc3545;
+$red-600: #b02a37;
+$red-700: #842029;
+$red-800: #58151c;
+$red-900: #2c0b0e;
+
+// Añil
+$indigo-50: #f7f3fe;
+$indigo-100: #dac6fc;
+$indigo-200: #bd98f9;
+$indigo-300: #a06bf7;
+$indigo-400: #833df4;
+$indigo-500: #6610f2;
+$indigo-600: #570ece;
+$indigo-700: #470ba9;
+$indigo-800: #380985;
+$indigo-900: #290661;
+
+// Verde azulado
+$teal-50: #f4fcfa;
+$teal-100: #c9f2e6;
+$teal-200: #9fe8d2;
+$teal-300: #75debf;
+$teal-400: #4ad3ab;
+$teal-500: #20c997;
+$teal-600: #1bab80;
+$teal-700: #168d6a;
+$teal-800: #126f53;
+$teal-900: #0d503c;
+
+// Anaranjado
+$orange-50: #fff9f3;
+$orange-100: #ffe0c7;
+$orange-200: #fec89a;
+$orange-300: #feaf6d;
+$orange-400: #fd9741;
+$orange-500: #fd7e14;
+$orange-600: #d76b11;
+$orange-700: #b1580e;
+$orange-800: #8b450b;
+$orange-900: #653208;
+
+// Gris azulado
+$bluegray-50: #f8f9fb;
+$bluegray-100: #e0e4ea;
+$bluegray-200: #c7ced9;
+$bluegray-300: #aeb9c8;
+$bluegray-400: #95a3b8;
+$bluegray-500: #7c8ea7;
+$bluegray-600: #69798e;
+$bluegray-700: #576375;
+$bluegray-800: #444e5c;
+$bluegray-900: #323943;
+
+// Violeta
+$purple-50: #f8f6fc;
+$purple-100: #dcd2f0;
+$purple-200: #c1aee4;
+$purple-300: #a68ad9;
+$purple-400: #8a66cd;
+$purple-500: #6f42c1;
+$purple-600: #5e38a4;
+$purple-700: #4e2e87;
+$purple-800: #3d246a;
+$purple-900: #2c1a4d;
+
+// Surface
+
+$surface-a: #ffffff;
+$surface-b: #efefef;
+$surface-c: #e9ecef;
+$surface-d: #dee2e6;
+$surface-e: #ffffff;
+$surface-f: #ffffff;
+$surface-0: #ffffff;
+$surface-50: #f9fafb;
+$surface-100: #f8f9fa;
+$surface-200: #e9ecef;
+$surface-300: #dee2e6;
+$surface-400: #ced4da;
+$surface-500: #adb5bd;
+$surface-600: #6c757d;
+$surface-700: #495057;
+$surface-800: #343a40;
+$surface-900: #212529;
+
+// Color de textos y fuentes
+$text-color: #212529;
+$text-color-secondary: #6c757d;
+$primary-color: #007bff;
+$primary-color-text: #ffffff;
+$font-family: 'Roboto', sans-serif;
+$content-padding: 1.25rem;
+$inline-spacing: 0.5rem;
+
+// Fonts
+$font-weight-100: 100;
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+
+// shadow
+$background-shadow: rgba(1, 105, 133, 0.2), 0 1px 1px 0 rgba(1, 105, 133, 0.12), 0 1px 1px 0 rgba(184, 230, 225, 0.14);
+
+$font-size-extra-small: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 16px;
+$font-size-extra-large: 24px;

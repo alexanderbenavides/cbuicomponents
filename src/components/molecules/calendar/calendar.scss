@@ -1,0 +1,97 @@
+@import '../../../scss/fonts';
+@import '../../../scss/colors';
+.calendar {
+  position: relative;
+  width: 300px;
+  background-color: $surface-a;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 $background-shadow;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 4px auto;
+  font-family: $font-family;
+}
+
+.calendar__date {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: $font-weight-900;
+  color: $surface-900;
+
+  &:nth-child(1) {
+    color: $red-500;
+  }
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: $surface-900;
+
+  &:nth-of-type(7n + 1) {
+    color: $red-500;
+    font-weight: $font-weight-900;
+  }
+  &:hover {
+    color: $surface-a !important;
+    font-weight: $font-weight-900;
+    background-color: $blue-600;
+    cursor: pointer;
+  }
+  &--current {
+    background-color: $teal-500;
+    color: $surface-a !important;
+    font-weight: $font-weight-900;
+    cursor: pointer;
+    &:hover {
+      background-color: $teal-600;
+    }
+  }
+
+  &--market {
+    color: $surface-a !important;
+    font-weight: $font-weight-900;
+    background-color: $blue-700;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-600;
+    }
+  }
+}
+.days-disabled {
+  pointer-events: none;
+}
+.calendar-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0;
+  align-items: center;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .previous,
+  .next {
+    color: $surface-900;
+    font-size: $font-size-extra-large;
+    font-weight: $font-weight-900;
+    &:hover {
+      color: $blue-500;
+    }
+  }
+}

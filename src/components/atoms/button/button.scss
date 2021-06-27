@@ -1,0 +1,217 @@
+@import '../../../scss/fonts';
+@import '../../../scss/colors';
+
+button {
+  font-size: 14px;
+  background-color: $blue-500;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: $surface-a;
+  margin: 0.25rem 0.125rem;
+  font-family: $font-family;
+  &:hover {
+    background-color: $blue-600;
+  }
+  &:active {
+    background-color: $blue-700;
+  }
+}
+
+// font
+button.btn-sm {
+  font-size: 12px;
+}
+button.btn-md {
+  font-size: 14px;
+}
+button.btn-lg {
+  font-size: 16px;
+}
+
+// Jerarquía botones
+button.btn-primary {
+  background-color: $blue-500;
+  &:hover {
+    background-color: $blue-600;
+  }
+  &:active {
+    background-color: $blue-700;
+  }
+}
+button.btn-secondary {
+  background-color: $bluegray-500;
+  &:hover {
+    background-color: $bluegray-600;
+  }
+  &:active {
+    background-color: $bluegray-700;
+  }
+}
+button.btn-success {
+  background-color: $green-500;
+  &:hover {
+    background-color: $green-600;
+  }
+  &:active {
+    background-color: $green-700;
+  }
+}
+button.btn-info {
+  background-color: $cyan-500;
+  &:hover {
+    background-color: $cyan-600;
+  }
+  &:active {
+    background-color: $cyan-700;
+  }
+}
+
+button.btn-warning {
+  background-color: $yellow-500;
+  &:hover {
+    background-color: $yellow-600;
+  }
+  &:active {
+    background-color: $yellow-700;
+  }
+}
+button.btn-help {
+  background-color: $indigo-500;
+  &:hover {
+    background-color: $indigo-600;
+  }
+  &:active {
+    background-color: $indigo-700;
+  }
+}
+button.btn-danger {
+  background-color: $red-500;
+  &:hover {
+    background-color: $red-600;
+  }
+  &:active {
+    background-color: $red-700;
+  }
+}
+
+// Jerarquía textos
+button.text-primary {
+  background-color: $surface-a;
+  color: $blue-500;
+  &:hover {
+    color: $blue-600;
+  }
+  &:active {
+    color: $blue-700;
+  }
+}
+button.text-secondary {
+  background-color: $surface-a;
+  color: $bluegray-500;
+  &:hover {
+    color: $bluegray-600;
+  }
+  &:active {
+    color: $bluegray-700;
+  }
+}
+button.text-success {
+  background-color: $surface-a;
+  color: $green-500;
+  &:hover {
+    color: $green-600;
+  }
+  &:active {
+    color: $green-700;
+  }
+}
+button.text-info {
+  background-color: $surface-a;
+  color: $cyan-500;
+  &:hover {
+    color: $cyan-600;
+  }
+  &:active {
+    color: $cyan-700;
+  }
+}
+button.text-warning {
+  background-color: $surface-a;
+  color: $yellow-500;
+  &:hover {
+    color: $yellow-600;
+  }
+  &:active {
+    color: $yellow-700;
+  }
+}
+button.text-help {
+  background-color: $surface-a;
+  color: $indigo-500;
+  &:hover {
+    color: $indigo-600;
+  }
+  &:active {
+    color: $indigo-700;
+  }
+}
+button.text-danger {
+  background-color: $surface-a;
+  color: $red-500;
+  &:hover {
+    color: $red-600;
+  }
+  &:active {
+    color: $red-700;
+  }
+}
+// desabilitados
+cb-button[disabled] {
+  pointer-events: none;
+  // botones
+  button.btn-disabled.btn-primary {
+    background-color: $blue-200;
+  }
+  button.btn-disabled.btn-secondary {
+    background-color: $bluegray-200;
+  }
+  button.btn-disabled.btn-success {
+    background-color: $green-200;
+  }
+  button.btn-disabled.btn-info {
+    background-color: $cyan-200;
+  }
+  button.btn-disabled.btn-warning {
+    background-color: $yellow-200;
+  }
+  button.btn-disabled.btn-help {
+    background-color: $indigo-200;
+  }
+  button.btn-disabled.btn-danger {
+    background-color: $red-200;
+  }
+  // botones tipo texto
+  button.btn-disabled.text-primary {
+    color: $blue-200;
+  }
+  button.btn-disabled.text-secondary {
+    color: $bluegray-200;
+  }
+  button.btn-disabled.text-success {
+    color: $green-200;
+  }
+  button.btn-disabled.text-info {
+    color: $cyan-200;
+  }
+  button.btn-disabled.text-warning {
+    color: $yellow-200;
+  }
+  button.btn-disabled.text-help {
+    color: $indigo-200;
+  }
+  button.btn-disabled.text-danger {
+    color: $red-200;
+  }
+}
