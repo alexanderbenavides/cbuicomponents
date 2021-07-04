@@ -1,3 +1,6 @@
+@import '../../../scss/fonts';
+@import '../../../scss/colors';
+
 #backdrop {
   position: fixed;
   top: 0;
@@ -34,8 +37,7 @@
 #modal {
   width: 90%;
   z-index: 100;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: $surface-a;
   transition: all 0.3s ease-out;
   height: fit-content;
   margin-bottom: 3rem;

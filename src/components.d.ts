@@ -14,6 +14,12 @@ export namespace Components {
     interface CbCalendar {
         "ctrlValue": string;
     }
+    interface CbIcon {
+        "name": string;
+        "size": string;
+    }
+    interface CbInput {
+    }
     interface CbModal {
         "close": () => Promise<void>;
         "ignoreBackDrop": boolean;
@@ -25,6 +31,11 @@ export namespace Components {
     interface CbModalFooter {
     }
     interface CbModalHeader {
+    }
+    interface CbTooltip {
+        "position": string;
+        "text": string;
+        "trigger": string;
     }
 }
 declare global {
@@ -39,6 +50,18 @@ declare global {
     var HTMLCbCalendarElement: {
         prototype: HTMLCbCalendarElement;
         new (): HTMLCbCalendarElement;
+    };
+    interface HTMLCbIconElement extends Components.CbIcon, HTMLStencilElement {
+    }
+    var HTMLCbIconElement: {
+        prototype: HTMLCbIconElement;
+        new (): HTMLCbIconElement;
+    };
+    interface HTMLCbInputElement extends Components.CbInput, HTMLStencilElement {
+    }
+    var HTMLCbInputElement: {
+        prototype: HTMLCbInputElement;
+        new (): HTMLCbInputElement;
     };
     interface HTMLCbModalElement extends Components.CbModal, HTMLStencilElement {
     }
@@ -64,13 +87,22 @@ declare global {
         prototype: HTMLCbModalHeaderElement;
         new (): HTMLCbModalHeaderElement;
     };
+    interface HTMLCbTooltipElement extends Components.CbTooltip, HTMLStencilElement {
+    }
+    var HTMLCbTooltipElement: {
+        prototype: HTMLCbTooltipElement;
+        new (): HTMLCbTooltipElement;
+    };
     interface HTMLElementTagNameMap {
         "cb-button": HTMLCbButtonElement;
         "cb-calendar": HTMLCbCalendarElement;
+        "cb-icon": HTMLCbIconElement;
+        "cb-input": HTMLCbInputElement;
         "cb-modal": HTMLCbModalElement;
         "cb-modal-body": HTMLCbModalBodyElement;
         "cb-modal-footer": HTMLCbModalFooterElement;
         "cb-modal-header": HTMLCbModalHeaderElement;
+        "cb-tooltip": HTMLCbTooltipElement;
     }
 }
 declare namespace LocalJSX {
@@ -83,6 +115,12 @@ declare namespace LocalJSX {
         "ctrlValue"?: string;
         "onValueChanged"?: (event: CustomEvent<string>) => void;
     }
+    interface CbIcon {
+        "name"?: string;
+        "size"?: string;
+    }
+    interface CbInput {
+    }
     interface CbModal {
         "ignoreBackDrop"?: boolean;
         "modalOpen"?: boolean;
@@ -92,14 +130,23 @@ declare namespace LocalJSX {
     interface CbModalFooter {
     }
     interface CbModalHeader {
+        "onOnClickIconCloseModal"?: (event: CustomEvent<boolean>) => void;
+    }
+    interface CbTooltip {
+        "position"?: string;
+        "text"?: string;
+        "trigger"?: string;
     }
     interface IntrinsicElements {
         "cb-button": CbButton;
         "cb-calendar": CbCalendar;
+        "cb-icon": CbIcon;
+        "cb-input": CbInput;
         "cb-modal": CbModal;
         "cb-modal-body": CbModalBody;
         "cb-modal-footer": CbModalFooter;
         "cb-modal-header": CbModalHeader;
+        "cb-tooltip": CbTooltip;
     }
 }
 export { LocalJSX as JSX };
@@ -108,10 +155,13 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "cb-button": LocalJSX.CbButton & JSXBase.HTMLAttributes<HTMLCbButtonElement>;
             "cb-calendar": LocalJSX.CbCalendar & JSXBase.HTMLAttributes<HTMLCbCalendarElement>;
+            "cb-icon": LocalJSX.CbIcon & JSXBase.HTMLAttributes<HTMLCbIconElement>;
+            "cb-input": LocalJSX.CbInput & JSXBase.HTMLAttributes<HTMLCbInputElement>;
             "cb-modal": LocalJSX.CbModal & JSXBase.HTMLAttributes<HTMLCbModalElement>;
             "cb-modal-body": LocalJSX.CbModalBody & JSXBase.HTMLAttributes<HTMLCbModalBodyElement>;
             "cb-modal-footer": LocalJSX.CbModalFooter & JSXBase.HTMLAttributes<HTMLCbModalFooterElement>;
             "cb-modal-header": LocalJSX.CbModalHeader & JSXBase.HTMLAttributes<HTMLCbModalHeaderElement>;
+            "cb-tooltip": LocalJSX.CbTooltip & JSXBase.HTMLAttributes<HTMLCbTooltipElement>;
         }
     }
 }

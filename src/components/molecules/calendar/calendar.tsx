@@ -218,9 +218,9 @@ export class Calendar {
     return (
       <div class="calendar">
         <div class="calendar-buttons">
-          <a class="previous" onClick= {this.previousMonth.bind(this)}>&#8249;</a>
+          <cb-icon name="cb-left-arrow" size="16" onClick= {this.previousMonth.bind(this)}/>
             <label> {this.monthsList[this.monthPosition]} - {this.year} </label>
-          <a class="next" onClick= {this.nextMonth.bind(this)}>&#8250;</a>
+          <cb-icon name="cb-right-arrow" size="16" onClick= {this.nextMonth.bind(this)}/>
         </div>
         <div class="calendar__date"                 
         ref={el => this.calendarContainer = el as HTMLDivElement}>

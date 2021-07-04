@@ -10,14 +10,18 @@
   </head>
   <body>
     <cb-calendar ctrl-value="30-07-2021"></cb-calendar>
+    <div class="get-date">fecha: </div>
     <cb-button size="lg" tier="btn-primary" onclick="openModal()">Abrir modal</cb-button>
-    <cb-button size="lg" tier="btn-secondary" onclick="openCalendar()">Obtener fecha</cb-button>
+    <cb-button size="lg" tier="btn-secondary" onclick="getCalendarDate()">Obtener fecha</cb-button>
     <cb-button size="lg" tier="btn-success" onclick="changeDate()">Cambiar fecha</cb-button>
     <cb-button size="lg" tier="btn-info" >Text button</cb-button>
     <cb-button size="lg" tier="btn-warning" >Text button</cb-button>
     <cb-button size="lg" tier="btn-help" >Text button</cb-button>
     <cb-button size="lg" tier="btn-danger" >Text button</cb-button>
     <cb-button size="lg" tier="text-danger" >Text button</cb-button>
+    <cb-tooltip text="Hola mundo raa aaaa, aquí viene algunas recomendaciones" trigger="hover">
+        <cb-button size="lg" tier="btn-info">Esto está guay</cb-button>
+    </cb-tooltip>
     <cb-modal ignore-back-drop="true">
       <cb-modal-header>
         Este es el header
@@ -66,8 +70,9 @@
       function openModal() {
         cbModal.open();
       }
-      function openCalendar() {
-        console.log(cbCalendar.ctrlValue);
+      function getCalendarDate() {
+        const div = document.querySelector('.get-date');
+        div.innerHTML = `fecha: ${cbCalendar.ctrlValue}`;
       }
       function changeDate() {
         cbCalendar.ctrlValue = '06-06-2021';

@@ -1,4 +1,4 @@
-import { Component, h, Method, Prop } from '@stencil/core';
+import { Component, h, Listen, Method, Prop } from '@stencil/core';
 
 @Component({
   tag: 'cb-modal',
@@ -18,6 +18,11 @@ export class ModalComponent {
   @Method() async close() {
     this.modalOpen = false;
     document.querySelector('body').removeAttribute('style');
+  }
+  @Listen('onClickIconCloseModal')
+  onClickIconCloseModalHandler(event: CustomEvent<boolean>) {
+    if (!event.detail) return;
+      this.close();
   }
   render() {      
     return [

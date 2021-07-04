@@ -1,6 +1,12 @@
 header {
   padding: 1rem;
+  position: relative;
 }
 ::slotted(h1) {
   font-size: 1.25rem;
+}
+
+cb-icon {
+  position: absolute;
+  right: 0.5rem;
 }
